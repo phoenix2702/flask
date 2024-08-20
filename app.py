@@ -8,7 +8,7 @@ import uuid
 app = Flask(__name__)
 
 # Load the trained model using pickle
-with open('InsuranceFrontend/model.pkl', 'rb') as model_file:
+with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Global dictionary to store results temporarily
